@@ -29,7 +29,18 @@
         "default_popup": "popup.html"
     },
     "web_accessible_resources": [
-        "*.js",
-        "*.html"
+        "options.html",
+        "player.html",
+        "popup.html",
+        "event.js",
+        "options.js",
+        "player.js",
+        "popup.js",
+        "style.css",
+        "icon128.png",
+        "icon128grey.png",
+        "dash.all.min.js",
+        "hls.min.js",
+        "dash.all.min.js.map"
     ]
 }

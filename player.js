@@ -136,7 +136,7 @@ function restoreSettings() {
     });
 }
 
-$(window).bind('hashchange', function() {
+window.addEventListener("hashchange", function() {
     var url = window.location.href.split("#")[1];
     reset();
 
@@ -145,6 +145,6 @@ $(window).bind('hashchange', function() {
     } else {
         playM3u8(url);
     }
-});
+}, false);
 
 restoreSettings();
