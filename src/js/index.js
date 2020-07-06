@@ -302,3 +302,19 @@ for(var i = 0; i < close_input.length; i++) {
 }
 
 restoreSettings();
+
+var btn_flats = document.querySelectorAll('.btn-flat');
+
+for(var i = 0; i < btn_flats.length; i++) {
+    btn_flats[i].addEventListener('click', function(e) {
+        var btn_flat = e.currentTarget;
+        btn_flat.classList.remove('btn-flat-animate');
+        void btn_flat.offsetWidth;
+        btn_flat.classList.add('btn-flat-animate');
+    });
+
+    btn_flats[i].addEventListener('animationend', function(e) {
+        var btn_flat = e.currentTarget;
+        btn_flat.classList.remove('btn-flat-animate');
+    });
+}
